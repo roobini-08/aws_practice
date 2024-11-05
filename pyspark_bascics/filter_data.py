@@ -2,8 +2,8 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 spark = SparkSession.builder.appName("PySpark S3 Example")\
         .config("spark.jars.packages", "org.apache.hadoop:hadoop-aws:3.3.1,com.amazonaws:aws-java-sdk-bundle:1.11.901") \
-.config("spark.hadoop.fs.s3a.access.key", "AKIAYUQGS7K7G3T5HN6D")\
-.config("spark.hadoop.fs.s3a.secret.key", "gBNlWC1RiQs8E/4cUze1ZNOZscktz1JBEwX2cD/q")\
+.config("spark.hadoop.fs.s3a.", "YOUR KEY")\
+.config("spark.hadoop.fs.s3a.", "YOUR KEY")\
 .config("spark.hadoop.fs.s3a.endpoint", "s3.amazonaws.com")\
 .config("spark.hadoop.fs.s3a.path.style.access", "true")\
 .config("spark.hadoop.fs.s3a.metastore.metrics.enabled", "false") \
